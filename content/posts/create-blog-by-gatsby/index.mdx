@@ -1,0 +1,52 @@
+---
+title: "Gatsbyで高速ブログ構築・公開！(前編)"
+date: 2021-08-25
+---
+
+Web系の技術の勉強を兼ねて、ブログを始めてみました。最初の記事としてその手順を書いておこうと思います。
+
+### 環境構築
+インストールする必要があるのは以下のものです。
+- Node.js
+- Git
+- Gatsby CLI
+
+公開の準備として、以下の作業もしておきます。
+- [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)のアカウント作成
+- Gatsby CloudとGitHubの連携
+
+### Gatsby Cloudでブログをデプロイ
+Gatsbyにはstarterというテンプレートのような機能があり、数回クリックするだけでサイトを構築できます。
+
+まず、Gatsby Cloudにログインして`Add a site+`をクリックします。
+
+次に、`Start from a Template`を選択します。
+
+そして、starterとしてMinimal Blogを選択します。
+
+あとは手順に従って進めていくと、GitHubのリポジトリ作成、ビルド、デプロイまで自動で行ってくれます。
+
+マイページに戻ってデプロイされたサイトを確認してみましょう！
+
+### ローカルに持ってくる
+ブログの内容を編集するために、ローカルで動かせるようにします。
+
+前節で自動作成されたリポジトリをクローンします。
+```shell
+git clone <リポジトリのURL>
+```
+
+必要なパッケージをインストールします。
+```shell
+npm install --legacy-peer-deps
+```
+
+ローカル環境で動かしてみます。
+```shell
+gatsby develop
+```
+localhost:8000にアクセスできれば準備OKです。
+
+参考: https://github.com/LekoArts/gatsby-starter-minimal-blog
+
+後編ではサイト情報の編集や、記事の追加をしていきます...
