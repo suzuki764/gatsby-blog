@@ -12,7 +12,7 @@ module.exports = {
     // Can be used for e.g. JSONLD
     siteHeadline: `すずきのブログ`,
     // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://suzukki.net`,
+    siteUrl: `https://blog.suzukki.net`,
     // Used for SEO
     siteDescription: `VRの研究室に入ったはずが、気がついたら機械学習をやることになっていた大学生のブログ。`,
     // Will be set on the <html /> tag
