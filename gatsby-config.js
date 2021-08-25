@@ -5,10 +5,22 @@ const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `すずきのブログ`,
+    // Default title of the page
+    siteTitleAlt: `すずきのブログ - A blog of information engineering student`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `すずきのブログ`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://suzukki.net`,
+    // Used for SEO
+    siteDescription: `VRの研究室に入ったはずが、気がついたら機械学習をやることになっていた大学生のブログ。`,
+    // Will be set on the <html /> tag
+    siteLanguage: `ja`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@gam_esz`,
   },
   plugins: [
     {
@@ -28,11 +40,11 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/gam_esz`,
           },
           {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `GitHub`,
+            url: `https://github.com/suzuki764`,
           },
         ],
       },
